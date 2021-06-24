@@ -1,0 +1,57 @@
+.doctorsName{
+margin-top: 78px;
+/* font-family: Montserrat; */
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+color: #1D201F;
+margin-right: 12px;
+}
+
+.doctorsPhoto{
+margin-top: 8px;
+background: rgba(173, 229, 244, 1);
+border-radius: 4px;
+}
+
+.totalWrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 286px;
+margin: 0 auto;
+    
+}
+
+.descriptionWrapper{
+width: 120px;
+}
+.description{
+display: block;
+/* font-family: Montserrat; */
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+color: #5B5B5B;
+margin-top: 8px;
+}
+
+.time{
+    display: block;
+    /* margin-top: 12px; */
+    margin-left: 14px;
+    /* font-family: Montserrat; */
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+color: #1D201F;
+margin-top: 10px;
+    }
+
+    .time:focus{
+        background: chartreuse;
+    }

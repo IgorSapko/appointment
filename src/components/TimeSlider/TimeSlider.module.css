@@ -1,0 +1,62 @@
+/* Without setting height the slides will take up the height of the slide's content */
+.swiper-container {
+  width: auto; 
+  margin-top: 2px;
+ /* display: inline; */
+
+  }
+
+  .timeSliderWrapper{
+    margin-top: 22px;
+    max-width: 600px;
+    /* margin: 0 auto; */
+  }
+
+  .sliderList{
+    margin-top: 21px;
+    height: auto;
+  }
+
+  .ionSlide{
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 32px;
+letter-spacing: 1px;
+width: 88px !important;
+height: 32px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #C1C1C1;
+flex: none;
+order: 0;
+flex-grow: 0;
+  }
+
+.swiper-pagination{
+display: none;
+}
+  
+:global(.checked>p){
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.04);
+color: #33BDE4 ;
+  }
+
+.description{
+font-style: normal;
+font-weight: 550;
+font-size: 16px;
+letter-spacing: 0.7px;
+line-height: 24px;
+text-align: left;
+color: #5B5B5B;
+margin-left: 18px;
+}

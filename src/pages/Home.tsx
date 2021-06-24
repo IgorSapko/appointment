@@ -1,60 +1,37 @@
-import MessageListItem from '../components/MessageListItem';
+import { CalendarSlider } from '../components/CalendarSlider/CalendarSlider';
+import { TimeSlider } from '../components/TimeSlider/TimeSlider';
+import { SignUpBlock } from '../components/SignUpBlock/SignUpBlock';
+
+import {DescriptionBlock} from '../components/DescriptionBlock/DescriptionBlock'
 import { useState } from 'react';
-import { Message, getMessages } from '../data/messages';
 import {
   IonContent,
-  IonHeader,
-  IonList,
-  IonPage,
-  IonRefresher,
-  IonRefresherContent,
-  IonTitle,
-  IonToolbar,
-  useIonViewWillEnter
+   IonPage,
 } from '@ionic/react';
 import './Home.css';
 
 const Home: React.FC = () => {
 
-  const [messages, setMessages] = useState<Message[]>([]);
-
-  useIonViewWillEnter(() => {
-    const msgs = getMessages();
-    setMessages(msgs);
-  });
-
-  const refresh = (e: CustomEvent) => {
-    setTimeout(() => {
-      e.detail.complete();
-    }, 3000);
-  };
+  const [date, setDate] = useState<string|null>(null);
+  const [time, setTime] = useState<string|null>(null);
+  const getDate = (date:string)=>{
+    setDate(date)
+      }
+  const getTime = (time:string)=>{
+    setTime(time)
+  }
 
   return (
-    <IonPage id="home-page">
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Inbox</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonRefresher slot="fixed" onIonRefresh={refresh}>
-          <IonRefresherContent></IonRefresherContent>
-        </IonRefresher>
-
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">
-              Inbox
-            </IonTitle>
-          </IonToolbar>
-        </IonHeader>
-
-        <IonList>
-          {messages.map(m => <MessageListItem key={m.id} message={m} />)}
-        </IonList>
+       <IonPage id="home-page">
+       <IonContent fullscreen>
+      <DescriptionBlock/>
+         <CalendarSlider getDateFunction = {getDate}/>
+         <TimeSlider getTimeFunction = {getTime}/>
+         <SignUpBlock  dateFromState = {date} timeFromState = {time}/>
       </IonContent>
+     
     </IonPage>
-  );
+     );
 };
 
 export default Home;
