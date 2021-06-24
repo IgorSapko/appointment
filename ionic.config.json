@@ -1,0 +1,7 @@
+{
+  "name": "appointmentp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
