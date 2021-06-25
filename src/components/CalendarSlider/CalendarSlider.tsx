@@ -43,7 +43,7 @@ export const CalendarSlider: React.FC<Props> = ({getDateFunction}) => {
         <img className='btn1Img' alt='btn1Img' src='assets/disable.jpg'/>
         </button>
         <button className='btn2'>
-          <img className='btn2Img' alt='btn2Img' src='assets/union.jpg'/>
+          <img className='btn2Img' alt='btn2Img' src='assets/Union.jpg'/>
           </button>
           </div>
     </div>
