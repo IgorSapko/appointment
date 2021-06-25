@@ -1,0 +1,8 @@
+
+
+@media (min-width:320px) {
+     #home-page{
+    max-width: 375px;
+    margin: 0 auto;
+} 
+}

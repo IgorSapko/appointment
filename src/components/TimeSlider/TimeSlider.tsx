@@ -8,17 +8,11 @@ type Props = {
 export const TimeSlider: React.FC<Props> = ({ getTimeFunction}) => {
    // slider options
 const slideOpts = {
-  //   initialSlide: 1,
-    // slidesPerView: 5,
-    // freeModeSticky:true,
+    freeMode:true,
+    freeModeMomentum:false,
     spaceBetween: 16,
     speed: 400,
-    // resizeObserver:true,
-    // slideTocheckedlide:true,
-    // slidesOffsetAfter:0,
-    // slidesOffsetBefore:0,
-    // updateOnWindowResize:false
-    edgeSwipeThreshold: 100,
+    width:88,
     touchReleaseOnEdges:true,
     touchStartForcePreventDefault:true,
     };

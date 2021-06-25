@@ -1,15 +1,13 @@
 /* Without setting height the slides will take up the height of the slide's content */
 .swiper-container {
-  width: auto; 
+  width: 100%; 
   margin-top: 2px;
- /* display: inline; */
 
   }
 
   .timeSliderWrapper{
     margin-top: 22px;
     max-width: 600px;
-    /* margin: 0 auto; */
   }
 
   .sliderList{
@@ -23,7 +21,6 @@ font-weight: normal;
 font-size: 25px;
 line-height: 32px;
 letter-spacing: 1px;
-width: 88px !important;
 height: 32px;
 display: flex;
 align-items: center;

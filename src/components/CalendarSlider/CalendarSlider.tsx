@@ -10,17 +10,11 @@ type Props = {
 export const CalendarSlider: React.FC<Props> = ({getDateFunction}) => {
   // slider options
   const slideOpts = {
-    //   initialSlide: 0,
-      // slidesPerView: 5,
-      freeMode:true,
+       freeMode:true,
       freeModeMomentum:false,
       spaceBetween: 16,
       speed: 400,
       width: 86,
-      // resizeObserver:true,
-      // slideToClickedSlide:true,
-      // updateOnWindowResize:false
-      // edgeSwipeThreshold: 100,
       touchReleaseOnEdges:true,
       touchStartForcePreventDefault:true,
         };
